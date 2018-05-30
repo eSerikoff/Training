@@ -1,17 +1,32 @@
 public class Box {
 
-    double weidth;
+    double width;
     double height;
     double depth;
 
     public Box(double weidth, double height, double depth) {
-        this.weidth = weidth;
+        this.width = weidth;
         this.height = height;
         this.depth = depth;
     }
 
+    public Box() {
+        width = -1;
+        height = -1;
+        depth = -1;
+    }
+
+    public Box(double len){
+        width = height = depth = len;
+    }
+    public Box(Box obj){
+        width = obj.width;
+        height = obj.height;
+        depth = obj.depth;
+    }
+
     //Return volume
     double volume(){
-        return weidth * height * depth;
+        return width * height * depth;
     }
 }
