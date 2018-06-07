@@ -4,6 +4,7 @@ public class Box {
     double height;
     double depth;
 
+
     public Box(double weidth, double height, double depth) {
         this.width = weidth;
         this.height = height;
@@ -16,9 +17,11 @@ public class Box {
         depth = -1;
     }
 
-    public Box(double len){
-        width = height = depth = len;
+    public Box(double kub){
+        width = height = depth = kub;
     }
+
+
     public Box(Box obj){
         width = obj.width;
         height = obj.height;

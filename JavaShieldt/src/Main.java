@@ -6,6 +6,7 @@ public class Main {
         Box myBox2 = new Box();
         Box myBox3 = new Box(7);
         Box myBox4 = new Box(myBox1);
+        BoxWeight myBoxW = new BoxWeight(40, 10,11,12);
 
         double vol;
 
@@ -20,6 +21,9 @@ public class Main {
 
         vol = myBox4.volume();
         System.out.println("Volume: " + vol);
+
+        vol = myBoxW.volume();
+        System.out.println("Volume: " + vol + " and weight: " + myBoxW.weight);
 
 
         }
